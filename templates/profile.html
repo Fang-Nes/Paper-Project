@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="photo">Введите имя фотографии</label><br>
+            <input type="name" class="form-control-name" rows="2" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="photo">Приложите фотографию</label>
+            <input type="file" class="form-control-file" id="photo" name="file">
+        </div>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
+</div>
+{% endblock %}

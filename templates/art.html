@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="fluid-container mosaic">
+    {% for pic in pics %}
+    <div class="picture">
+        <a artstation-open-project="7117245" href="/">
+            <img alt="Facial Topology mini tutorial" class="image"
+                src="{{url_for('static', filename='img/users_pictures/' + pic.user_id|string ~ '/' + pic.id|string ~ '.png')}}">
+        </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
